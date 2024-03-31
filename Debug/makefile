@@ -10,8 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include src/src/subdir.mk
 -include src/subdir.mk
--include Utilities/STM32F4-Discovery/subdir.mk
--include Libraries/STM32F4xx_StdPeriph_Driver/src/subdir.mk
+-include Libraries/Device/STM32F4xx/src/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -29,18 +28,18 @@ EXECUTABLES \
 
 
 # All Target
-all: uPMU_27-7-2021.elf secondary-outputs
+all: new8_Update0.elf secondary-outputs
 
 # Tool invocations
-uPMU_27-7-2021.elf: $(OBJS) $(USER_OBJS)
-	@echo linking    uPMU_27-7-2021.elf & arm-atollic-eabi-gcc -o "uPMU_27-7-2021.elf" $(OBJS) $(USER_OBJS) $(LIBS) -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"../stm32f4_flash.ld" -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler "-Wl,-Map=uPMU_27-7-2021.map" -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs
+new8_Update0.elf: $(OBJS) $(USER_OBJS)
+	@echo linking    new8_Update0.elf & arm-atollic-eabi-gcc -o "new8_Update0.elf" $(OBJS) $(USER_OBJS) $(LIBS) -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"../stm32f4_flash.ld" -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler "-Wl,-Map=new8_Update0.map" -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs
 
-EXECUTABLES: uPMU_27-7-2021.elf $(EXECUTABLES)
-	"G:\STM\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java" -jar "G:\STM\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar" convert-hex sizeinfo list uPMU_27-7-2021.elf
+EXECUTABLES: new8_Update0.elf $(EXECUTABLES)
+	"G:\STM\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java" -jar "G:\STM\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar" convert-hex sizeinfo list new8_Update0.elf
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(SECOUTPUTBUILDVAR)$(OBJS)$(C_DEPS) uPMU_27-7-2021.elf
+	-$(RM) $(EXECUTABLES)$(SECOUTPUTBUILDVAR)$(OBJS)$(C_DEPS) new8_Update0.elf
 	-@echo ' '
 
 secondary-outputs: $(SECOUTPUTBUILDVAR)

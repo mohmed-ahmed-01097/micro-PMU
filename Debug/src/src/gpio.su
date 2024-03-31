@@ -1,0 +1,6 @@
+gpio.c:14:6:uPMU_GPIO_Init	16	static
+gpio.c:22:6:Data_Port_Init	0	static
+gpio.c:36:6:Control_Pins_Init	16	static
+gpio.c:68:9:GPIO_Bit_Init_Input	0	static
+gpio.c:83:9:GPIO_Bit_Init_Output	20	static
+gpio.c:111:9:GPIO_Bit_Init_AF	20	static

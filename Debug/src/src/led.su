@@ -1,0 +1,8 @@
+led.c:16:6:OnBoard_Init	8	static
+led.c:27:6:GPIO_Init_LED	20	static
+led.c:61:6:GPIO_Write_LED	0	static
+led.c:81:9:GPIO_Read_LED	0	static
+led.c:102:6:GPIO_Init_BUTTON	16	static
+led.c:126:6:uPMU_Error_Code_Display	8	static
+led.c:160:6:uPMU_Set_Error_Code	0	static
+led.c:166:9:uPMU_Get_Error_Code	0	static

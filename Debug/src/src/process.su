@@ -1,0 +1,6 @@
+process.c:27:6:uPMU_Init_Process	0	static
+process.c:43:6:uPMU_AD7606_Reading	32	static
+process.c:107:6:uPMU_Str_Data	48	static
+process.c:150:6:uPMU_Str_Result	40	static
+process.c:178:6:uPMU_Str_Freq	40	static
+process.c:204:6:uPMU_Send_Data	0	static

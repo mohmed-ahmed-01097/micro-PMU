@@ -1,0 +1,4 @@
+exti.c:13:6:uPMU_EXTIx_Init	12	static
+exti.c:61:12:EXTI_Line_Check	0	static
+exti.c:71:6:EXTI_Clear_PendingBit	0	static
+exti.c:78:6:EXTI_Set_PendingBit	0	static

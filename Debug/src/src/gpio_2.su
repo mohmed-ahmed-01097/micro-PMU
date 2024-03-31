@@ -1,0 +1,5 @@
+gpio_2.c:115:6:GPIO_Init_LED	16	static
+gpio_2.c:162:6:GPIO_TurnON_LED	16	static
+gpio_2.c:185:6:GPIO_TurnOFF_LED	16	static
+gpio_2.c:207:6:STM_GPIO_Init	4	static
+gpio_2.c:243:6:GPIO_Port_Init	4	static

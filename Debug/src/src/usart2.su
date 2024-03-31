@@ -1,0 +1,11 @@
+usart2.c:39:6:USART2_GPIO_Config	0	static
+usart2.c:70:6:USART2_TX_DMA_Config	0	static
+usart2.c:118:6:USART2_RX_DMA_Config	4	static
+usart2.c:26:6:uPMU_UART_Init	16	static
+usart2.c:172:6:USART2_Init	0	static
+usart2.c:208:6:USART2_Enable	4	static
+usart2.c:238:6:USART2_IRQ_CallBack	0	static
+usart2.c:272:6:USART2_TX_DMA_IRQ_Callback	0	static
+usart2.c:284:6:USART2_RX_DMA_IRQ_Callback	8	static
+usart2.c:332:6:USART2_Tx_Str	0	static
+usart2.c:402:6:USART2_Process	16	static

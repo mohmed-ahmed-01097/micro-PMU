@@ -16,8 +16,7 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-Libraries/STM32F4xx_StdPeriph_Driver/src \
-Utilities/STM32F4-Discovery \
+Libraries/Device/STM32F4xx/src \
 src \
 src/src \
 

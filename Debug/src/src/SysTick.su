@@ -1,0 +1,4 @@
+systick.c:16:6:SysTick_Init	16	static
+systick.c:38:6:SysTick_IncrementTicks_CallBack	0	static
+systick.c:57:6:SysTick_Delay	0	static
+systick.c:69:10:SysTick_GetCurrentTick	0	static
