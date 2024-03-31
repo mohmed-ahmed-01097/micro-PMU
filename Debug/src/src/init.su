@@ -1,0 +1,4 @@
+init.c:6:6:init	8	static
+init.c:19:6:play	8	static
+init.c:49:6:EXTI0_IRQHandler	8	static
+init.c:60:6:delay_ms	24	static
